@@ -1,0 +1,16 @@
+services:
+  mariadb:
+    image: mariadb:11
+    container_name: bs-mariadb
+    environment:
+      MARIADB_ROOT_PASSWORD: rootpw
+      MARIADB_DATABASE: bs_platform
+      MARIADB_USER: app
+      MARIADB_PASSWORD: apppw
+    ports:
+      - "3307:3306"
+    volumes:
+      - mariadb_data:/var/lib/mysql
+
+volumes:
+  mariadb_data:

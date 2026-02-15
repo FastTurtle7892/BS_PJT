@@ -1,0 +1,4 @@
+country,operator_name,station_id,event_date,failure_count,total_count
+KR,SKT,ST001,2026-02-01,3,100
+KR,KT,ST002,2026-02-01,5,120
+US,ATT,ST003,2026-02-01,2,90
